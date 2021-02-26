@@ -37,9 +37,6 @@ spark-submit \
   --executor-memory 2g \
   --queue bigdata \
   --name spark_read_inceptor_demo
-  --conf "spark.yarn.dist.archives=./jdk/jdk-8u261-linux-x64.tar.gz" \
-  --conf "spark.executorEnv.JAVA_HOME=./jdk-8u261-linux-x64.tar.gz/jdk1.8.0_261" \
-  --conf "spark.yarn.appMasterEnv.JAVA_HOME=./jdk-8u261-linux-x64.tar.gz/jdk1.8.0_261" \
   --conf spark.driver.extraClassPath=lib/* \
   --conf spark.executor.extraClassPath=lib/* \
   --conf spark.driver.memory=2g \
